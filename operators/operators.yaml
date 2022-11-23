@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: operators
+  annotations:
+    argocd.argoproj.io/sync-wave: "200"
+spec:
+  destination:
+    namespace: argocd
+    server: https://kubernetes.default.svc
+  project: argocd
+  source:
+    repoURL: https://github.com/jorgenpersson59/mq-argo.git
+    path: operators/resources
+    targetRevision: main
+  syncPolicy:
+    automated:
+      prune: false
+      selfHeal: true
