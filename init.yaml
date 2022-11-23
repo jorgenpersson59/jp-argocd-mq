@@ -25,7 +25,7 @@ spec:
   project: argocd
   source:
     path: ./
-    repoURL: https://https://github.com/jorgenpersson59/mq-argo.git
+    repoURL: https://github.com/jorgenpersson59/mq-argo.git
     targetRevision: main
   syncPolicy:
     automated:
