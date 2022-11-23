@@ -1,6 +1,2 @@
 resources:
----  - namespaces/namespaces.yaml
-  - operators/operators.yaml
----  - ci/ci.yaml
----  - certs/certs.yaml
----  - operands/operands.yaml
+  - entitlement/ibm-entitlement-key.yaml
