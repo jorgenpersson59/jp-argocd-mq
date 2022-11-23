@@ -1,2 +1,2 @@
 resources:
-  - entitlement/ibm-entitlement-key.yaml
+  - entitlement/entitlement.yaml
