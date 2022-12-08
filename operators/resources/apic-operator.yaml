@@ -4,7 +4,7 @@ metadata:
   name: ibm-api-connect
   namespace: openshift-operators
 spec:
-  channel: v3.2
+  channel: v3.2.0
   installPlanApproval: Automatic
   name: ibm-apiconnect
   source: ibm-operator-catalog
