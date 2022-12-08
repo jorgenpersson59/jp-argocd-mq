@@ -1,3 +1,2 @@
 resources:
-  - entitlement/entitlement.yaml
-  - operators/operators.yaml
+  - namespaces/namespaces.yaml
