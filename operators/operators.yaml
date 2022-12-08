@@ -6,11 +6,11 @@ metadata:
     argocd.argoproj.io/sync-wave: "200"
 spec:
   destination:
-    namespace: argocd
+    namespace: cp4i
     server: https://kubernetes.default.svc
-  project: argocd
+  project: default
   source:
-    repoURL: https://github.com/jorgenpersson59/mq-argo.git
+    repoURL: https://github.com/jorgenpersson59/jp-argo.git
     path: operators/resources
     targetRevision: main
   syncPolicy:
