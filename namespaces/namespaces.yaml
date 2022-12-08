@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: cp4i
     server: https://kubernetes.default.svc
-  project: cp4i
+  project: default
   source:
     repoURL: https://github.com/jorgenpersson59/jp-argo
     path: namespaces/resources
