@@ -1,3 +1,4 @@
 resources:
   - namespaces/namespaces.yaml
   - operators/operators.yaml
+  - instances/instances.yaml
