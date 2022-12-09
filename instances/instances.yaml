@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: operands
+  annotations:
+    argocd.argoproj.io/sync-wave: "400"
+spec:
+  destination:
+    namespace: cp4i
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    repoURL: https://github.com/jorgenpersson59/jp-argo.git
+    path: instances/resources
+    targetRevision: main
+    directory:
+      recurse: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
