@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: operands
+  name: instances
   annotations:
     argocd.argoproj.io/sync-wave: "400"
 spec:
