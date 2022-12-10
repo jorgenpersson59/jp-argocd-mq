@@ -1,4 +1,5 @@
 resources:
   - namespaces/namespaces.yaml
+  - entitlement/entitlement.yaml
   - operators/operators.yaml
   - instances/instances.yaml
