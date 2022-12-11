@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Secret
 metadata:
-  name: ibm-entitlement-key-x
+  name: ibm-entitlement-key
   namespace: cp4i
 type: Opaque
 data:
