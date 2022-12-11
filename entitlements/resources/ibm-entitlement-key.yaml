@@ -2,7 +2,7 @@ kind: Secret
 apiVersion: v1
 metadata:
   name: ibm-entitlement-key
-  namespace: argocd
+  namespace: cp4i
   uid: 82064fc3-7dfd-4bd1-8af0-d7859771443f
   resourceVersion: '12984327'
   creationTimestamp: '2022-11-23T12:38:41Z'
