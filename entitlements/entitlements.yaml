@@ -1,12 +1,12 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: entitlement
+  name: entitlements
   annotations:
     argocd.argoproj.io/sync-wave: "300"
 spec:
   destination:
-    namespace: argocd
+    namespace: cp4i
     server: https://kubernetes.default.svc
   project: default
   source:
