@@ -1,7 +1,7 @@
-apiVersion: v1
-kind: Namespace
+kind: Project
+apiVersion: project.openshift.io/v1
 metadata:
   name: cp4i
   labels:
-    operator.tekton.dev/enable-annotation: enabled
+    kubernetes.io/metadata.name: cp4i
 spec: {}
