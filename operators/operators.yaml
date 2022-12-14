@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/jorgenpersson59/jp-argo.git
+    repoURL: https://github.com/jorgenpersson59/jp-argocd
     path: operators/resources
     targetRevision: main
   syncPolicy:
