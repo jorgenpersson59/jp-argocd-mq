@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: ./
-    repoURL: https://github.com/jorgenpersson59/jp-argo.git
+    repoURL: https://github.com/jorgenpersson59/jp-argocd.git
     targetRevision: main
   syncPolicy:
     automated:
