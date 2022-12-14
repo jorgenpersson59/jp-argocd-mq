@@ -1,19 +1,4 @@
 apiVersion: argoproj.io/v1alpha1
-kind: AppProject
-metadata:
-  name: argocd
-  namespace: openshift-gitops
-spec:
-  clusterResourceWhitelist:
-    - group: '*'
-      kind: '*'
-  destinations:
-    - namespace: '*'
-      server: '*'
-  sourceRepos:
-    - '*'
----
-apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: init
@@ -22,10 +7,10 @@ spec:
   destination:
     namespace: openshift-gitops
     server: https://kubernetes.default.svc
-  project: argocd
+  project: default
   source:
     path: ./
-    repoURL: https://github.com/jorgenpersson59/mq-argo.git
+    repoURL: https://github.com/jorgenpersson59/jp-argo.git
     targetRevision: main
   syncPolicy:
     automated:
