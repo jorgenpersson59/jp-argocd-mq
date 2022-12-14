@@ -6,7 +6,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CD3JKX
+    license: L-RJON-CJR2RX
     use: NonProduction
   queueManager:
     name: UC1
@@ -22,7 +22,7 @@ spec:
         name: uc1-mqsc-ini
         items:
         - uniclus.ini
-  version: 9.3.0.0-r2
+  version: 9.3.1.0-r2
   web:
     enabled: true
   template:
@@ -49,7 +49,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CD3JKX
+    license: L-RJON-CJR2RX
     use: NonProduction
   queueManager:
     name: UC2
@@ -65,7 +65,7 @@ spec:
         name: uc2-mqsc-ini
         items:
         - uniclus.ini
-  version: 9.3.0.0-r2
+  version: 9.3.1.0-r2
   web:
     enabled: true
   template:
@@ -92,7 +92,7 @@ metadata:
 spec:
   license:
     accept: true
-    license: L-RJON-CD3JKX
+    license: L-RJON-CJR2RX
     use: NonProduction
   queueManager:
     name: UC3
@@ -108,7 +108,7 @@ spec:
         name: uc3-mqsc-ini
         items:
         - uniclus.ini
-  version: 9.3.0.0-r2
+  version: 9.3.1.0-r2
   web:
     enabled: true
   template:
