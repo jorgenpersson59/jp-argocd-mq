@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/jorgenpersson59/jp-argocd-2
-    path: instances/resources
+    path: navigator/resources
     targetRevision: main
     directory:
       recurse: true
