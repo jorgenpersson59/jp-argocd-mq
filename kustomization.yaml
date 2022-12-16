@@ -2,6 +2,7 @@ resources:
   - namespaces/namespaces.yaml
   - entitlements/entitlements.yaml
   - operators/operators.yaml
+  - configmaps/configmaps.yaml
   - certificates/certificates.yaml
   - navigator/navigator.yaml
   - mq/mq.yaml
