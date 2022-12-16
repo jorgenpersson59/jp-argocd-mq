@@ -1,0 +1,128 @@
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: uc1
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-CJR2RX
+    use: NonProduction
+  queueManager:
+    name: UC1
+    availability:
+      type: NativeHA
+    mqsc:
+    - configMap:
+        name: uc1-mqsc-ini
+        items:
+        - uniclus.mqsc
+    ini:
+    - configMap:
+        name: uc1-mqsc-ini
+        items:
+        - uniclus.ini
+  version: 9.3.1.0-r2
+  web:
+    enabled: true
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  pki:
+      keys:
+        - name: default
+          secret:
+            secretName: mq-secret
+            items:
+            - tls.key
+            - tls.crt
+---
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: uc2
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-CJR2RX
+    use: NonProduction
+  queueManager:
+    name: UC2
+    availability:
+      type: NativeHA
+    mqsc:
+    - configMap:
+        name: uc2-mqsc-ini
+        items:
+        - uniclus.mqsc
+    ini:
+    - configMap:
+        name: uc2-mqsc-ini
+        items:
+        - uniclus.ini
+  version: 9.3.1.0-r2
+  web:
+    enabled: true
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  pki:
+    keys:
+      - name: default
+        secret:
+          secretName: mq-secret
+          items:
+          - tls.key
+          - tls.crt
+---
+apiVersion: mq.ibm.com/v1beta1
+kind: QueueManager
+metadata:
+  name: uc3
+  namespace: cp4i
+spec:
+  license:
+    accept: true
+    license: L-RJON-CJR2RX
+    use: NonProduction
+  queueManager:
+    name: UC3
+    availability:
+      type: NativeHA
+    mqsc:
+    - configMap:
+        name: uc3-mqsc-ini
+        items:
+        - uniclus.mqsc
+    ini:
+    - configMap:
+        name: uc3-mqsc-ini
+        items:
+        - uniclus.ini
+  version: 9.3.1.0-r2
+  web:
+    enabled: true
+  template:
+    pod:
+      containers:
+        - env:
+            - name: MQSNOAUT
+              value: 'yes'
+          name: qmgr
+  pki:
+    keys:
+       - name: default
+         secret:
+           secretName: mq-secret
+           items:
+           - tls.key
+           - tls.crt
