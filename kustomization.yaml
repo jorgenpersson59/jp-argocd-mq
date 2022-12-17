@@ -5,7 +5,3 @@ resources:
   - configmaps/configmaps.yaml
   - certificates/certificates.yaml
   - navigator/navigator.yaml
-  - mq/mq.yaml
-  - ace/ace.yaml
-  - es/es.yaml
-  - apic/apic.yaml
