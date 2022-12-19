@@ -4,4 +4,3 @@ resources:
   - operators/operators.yaml
   - configmaps/configmaps.yaml
   - certificates/certificates.yaml
-  - navigator/navigator.yaml
