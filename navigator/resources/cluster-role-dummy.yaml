@@ -1,0 +1,14 @@
+# Dummy resources for cluster role and rolebinding that navigator operator adds. Added so they are not automatically pruned
+apiVersion: rbac.authorization.k8s.io/v1	
+kind: ClusterRole
+metadata:
+  name: navigator-cp4i
+---
+apiVersion: rbac.authorization.k8s.io/v1	
+kind: ClusterRoleBinding	
+metadata:
+  name: navigator-cp4i
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: navigator-cp4i
