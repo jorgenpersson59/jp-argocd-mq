@@ -8,4 +8,3 @@ resources:
   - mq/mq.yaml
   - ace/ace.yaml
   - es/es.yaml
-  - apic/apic.yaml
