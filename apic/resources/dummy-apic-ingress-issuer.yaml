@@ -1,0 +1,24 @@
+apiVersion: cert-manager.io/v1
+kind: Issuer
+metadata:
+  generation: 1
+  name: apic-ingress-issuer
+  namespace: cp4i
+  ownerReferences:
+    - apiVersion: apiconnect.ibm.com/v1beta1
+      blockOwnerDeletion: true
+      controller: true
+      kind: APIConnectCluster
+      name: apic
+  resourceVersion: '660640'
+spec:
+  ca:
+    secretName: apic-ingress-ca
+status:
+  conditions:
+    - lastTransitionTime: '2022-12-22T19:58:20Z'
+      message: 'Error getting keypair for CA issuer: secret "apic-ingress-ca" not found'
+      observedGeneration: 1
+      reason: ErrGetKeyPair
+      status: 'False'
+      type: Ready

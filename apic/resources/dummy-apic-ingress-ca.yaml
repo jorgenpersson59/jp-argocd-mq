@@ -1,0 +1,46 @@
+apiVersion: cert-manager.io/v1
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  generation: 1
+  name: apic-ingress-ca
+  namespace: cp4i
+  ownerReferences:
+    - apiVersion: apiconnect.ibm.com/v1beta1
+      blockOwnerDeletion: true
+      controller: true
+      kind: APIConnectCluster
+      name: apic
+spec:
+  commonName: ingress-ca
+  duration: 87600h0m0s
+  isCA: true
+  issuerRef:
+    kind: Issuer
+    name: apic-self-signed
+  renewBefore: 720h0m0s
+  secretName: apic-ingress-ca
+  secretTemplate:
+    labels:
+      app.kubernetes.io/instance: apic
+      app.kubernetes.io/managed-by: ibm-apiconnect
+      app.kubernetes.io/name: apic-ingress-ca
+  usages:
+    - digital signature
+    - cert sign
+    - key encipherment
+status:
+  conditions:
+    - lastTransitionTime: '2022-12-22T19:55:38Z'
+      message: Issuing certificate as Secret does not exist
+      observedGeneration: 1
+      reason: DoesNotExist
+      status: 'False'
+      type: Ready
+    - lastTransitionTime: '2022-12-22T19:55:39Z'
+      message: Issuing certificate as Secret does not exist
+      observedGeneration: 1
+      reason: DoesNotExist
+      status: 'True'
+      type: Issuing
+  revision: 836
