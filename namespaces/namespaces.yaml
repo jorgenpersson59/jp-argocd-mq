@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    repoURL: https://github.com/jorgenpersson59/jp-argocd-2
+    repoURL: https://github.com/jorgenpersson59/jp-argocd-mq
     path: namespaces/resources
     targetRevision: main
   syncPolicy:
