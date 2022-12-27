@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     path: ./
-    repoURL: https://github.com/jorgenpersson59/jp-argocd-2
+    repoURL: https://github.com/jorgenpersson59/jp-argocd-mq
     targetRevision: main
   syncPolicy:
     automated:
