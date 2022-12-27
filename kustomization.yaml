@@ -6,4 +6,3 @@ resources:
   - certificates/certificates.yaml
   - navigator/navigator.yaml
   - mq/mq.yaml
-  - ace/ace.yaml
