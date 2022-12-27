@@ -1,5 +1,5 @@
-# jp-argocd
+# jp-argocd-mq
 
-Add your key to /Users/jorgenpersson/Downloads/argocd/jp-argocd/entitlements/resources/ibm-entitlement-key.yaml.
+Add your key to /Users/jorgenpersson/Downloads/argocd/jp-argocd-mq/entitlements/resources/ibm-entitlement-key.yaml.
 
 
